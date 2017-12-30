@@ -1,12 +1,15 @@
+// GENERAL //
+
 body {
-  margin: 0;
   font-family: 'Varela Round', sans-serif;
   letter-spacing: 2px;
+  margin: 0;
 }
 
 $green1: #16A085;
 $green2: #1ABC9C;
 $grey: #F5F6F7;
+
 
 .button {
     background-color: $green1;
@@ -20,7 +23,7 @@ $grey: #F5F6F7;
 
 .containter {
   margin: 0 auto;
-  width: 900px;
+  max-width: 900px;
 }
 
 h1 {
@@ -61,10 +64,12 @@ h3 {
       @extend h3;
       display: block;
       padding: 10px;
+      &:hover {
+        color: $green1;
+      }
     }
   }
   .middle-bar {
-//    align-items: center;
     display: block;
     margin: 0 auto;
     padding: 10px 0;
@@ -74,7 +79,6 @@ h3 {
     }
   }
   .social-icons {
-//    align-items: flex-end;
     display: block;
     font-size: 20px;
     height: 40px;
@@ -83,8 +87,11 @@ h3 {
     top: 170px;
     text-align: center;
     width: 100%;
-    i {
+    svg {
       line-height: 30px;
+      &:hover {
+        color: $green1;
+      }
     }
   }
 }
@@ -99,7 +106,7 @@ h3 {
   height: 650px;
   vertical-align: middle;
   .row {
-    padding: 20px;
+    padding: 80px 20px;
   }
   h3 {
     color: $green1;
@@ -141,6 +148,11 @@ h3 {
     left: 50px;
     top: 70px;
   }
+  svg {
+      &:hover {
+      color: $green1;
+    }
+  }
 }
 
 
@@ -148,12 +160,17 @@ h3 {
 // PICTURES //
 
 .pictures {
-  height: 400px;
   background-color: $grey;
+  height: 400px;
   .arrows {
     position: relative;
     top: 40px;
     right: -1080px;
+    svg {
+        &:hover {
+        color: $green1;
+      }
+    }
   }
   .row {
     display: flex;
@@ -161,7 +178,7 @@ h3 {
     padding: 20px 0;
   }
   [class*="col"] {
-    display: block;
+    display: inline-block;
     padding: 20px;
     text-align: center;
   }
@@ -176,10 +193,10 @@ h3 {
 // INPUT //
 
 .input {
-  height: 900px;
   background-image: url("../Project/pic8.gif");
   background-position: center;
   background-size: cover;
+  height: 900px;
   .container {
     position: relative;
     top: 50%;
@@ -213,8 +230,8 @@ h3 {
 // DOWNLOAD //
 
 .download {
-  height: 400px;
   background-color: $grey;
+  height: 400px;
   .container {
     position: relative;
     text-align: center;
@@ -226,10 +243,10 @@ h3 {
     padding-top: 10px;
   }
   p {
-    text-transform: uppercase;
     margin: 0 auto;
+    max-width: 850px;
     padding-bottom: 20px;
-    width: 850px;
+    text-transform: uppercase;
   }
   .apple, .play {
     color: white;
@@ -240,15 +257,15 @@ h3 {
       display: inline-block;
       height: 60px;
       position: relative;
-      width: 300px;
       text-transform: uppercase;
+      width: 300px;
     }
     .app-icon, .play-icon {
       border-radius: 0 4px 4px 0;
       background-color: $green1;
       display: inline-block;
-      position: relative;
       height: 60px;
+      position: relative;
       right: 6px;
       top: 1.5px;
       width: 60px;
@@ -264,16 +281,17 @@ h3 {
 // FOOTER //
 
 .footer {
-//  height: 80px;
-  .container {
-    position: relative;
-    top: 60px;
+  .row {
+    padding: 20px 0;
   }
   h4 {
     display: inline;
     font-weight: bolder;
     margin: 10px;
     text-transform: uppercase;
+    &:hover {
+      color: $green1;
+    }
   }
   .with-border {
     border-left: solid 2px $green1;
@@ -283,10 +301,5 @@ h3 {
   p {
     font-weight: bolder;
     padding: 10px;
-  }
-  img {
-    position: relative;
-    right: -1060px;
-    top:  -60px;
   }
 }
