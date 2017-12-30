@@ -16,6 +16,12 @@ body {
   margin: 0 auto;
   width: 900px; }
 
+h1 {
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
 h3, .header .row [class*="col"] {
   font-size: 20px;
   font-weight: bold;
@@ -32,7 +38,6 @@ h3, .header .row [class*="col"] {
     height: 900px;
     width: auto; }
   .header .row {
-    align-items: flex-start;
     display: flex;
     justify-content: space-between;
     height: auto;
@@ -48,10 +53,6 @@ h3, .header .row [class*="col"] {
     margin: 0 auto;
     padding: 10px 0;
     text-align: center; }
-    .header .middle-bar h1 {
-      font-size: 45px;
-      font-weight: bold;
-      text-transform: uppercase; }
     .header .middle-bar p {
       font-size: 15px; }
   .header .social-icons {
@@ -105,7 +106,112 @@ h3, .header .row [class*="col"] {
     top: 70px; }
 
 .pictures {
-  height: 500px;
+  height: 400px;
   background-color: #F5F6F7; }
+  .pictures .arrows {
+    position: relative;
+    top: 40px;
+    right: -1080px; }
+  .pictures .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0; }
+  .pictures [class*="col"] {
+    display: block;
+    padding: 20px;
+    text-align: center; }
+  .pictures .photo {
+    height: auto;
+    margin: 5px;
+    width: 100%; }
+
+.input {
+  height: 900px;
+  background-image: url("../Project/pic8.gif");
+  background-position: center;
+  background-size: cover; }
+  .input .container {
+    position: relative;
+    top: 50%;
+    text-align: center; }
+  .input .form-control {
+    border-radius: 4px 0 0 4px;
+    display: inline-block;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px; }
+  .input .check {
+    border-radius: 0 4px 4px 0;
+    background-color: #16A085;
+    color: white;
+    display: inline-block;
+    height: 60px;
+    position: relative;
+    right: 6px;
+    width: 60px; }
+    .input .check .fa-check {
+      position: relative;
+      top: 8px; }
+
+.download {
+  height: 400px;
+  background-color: #F5F6F7; }
+  .download .container {
+    position: relative;
+    text-align: center;
+    top: 20%; }
+  .download h4 {
+    color: white;
+    font-weight: bolder;
+    padding-top: 10px; }
+  .download p {
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 850px; }
+  .download .apple, .download .play {
+    color: white;
+    display: inline-block; }
+    .download .apple .app-andr, .download .play .app-andr {
+      background-color: #1ABC9C;
+      border-radius: 4px 0 0 4px;
+      display: inline-block;
+      height: 60px;
+      position: relative;
+      width: 300px;
+      text-transform: uppercase; }
+    .download .apple .app-icon, .download .apple .play-icon, .download .play .app-icon, .download .play .play-icon {
+      border-radius: 0 4px 4px 0;
+      background-color: #16A085;
+      display: inline-block;
+      position: relative;
+      height: 60px;
+      right: 6px;
+      top: 1.5px;
+      width: 60px; }
+      .download .apple .app-icon .fa-android, .download .apple .app-icon .fa-apple, .download .apple .play-icon .fa-android, .download .apple .play-icon .fa-apple, .download .play .app-icon .fa-android, .download .play .app-icon .fa-apple, .download .play .play-icon .fa-android, .download .play .play-icon .fa-apple {
+        position: relative;
+        top: 7px; }
+
+.footer .container {
+  position: relative;
+  top: 60px; }
+.footer h4 {
+  display: inline;
+  font-weight: bolder;
+  margin: 10px;
+  text-transform: uppercase; }
+.footer .with-border {
+  border-left: solid 2px #16A085;
+  border-right: solid 2px #16A085;
+  padding: 0 20px; }
+.footer p {
+  font-weight: bolder;
+  padding: 10px; }
+.footer img {
+  position: relative;
+  right: -1060px;
+  top: -60px; }
 
 /*# sourceMappingURL=style.css.map */

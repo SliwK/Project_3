@@ -23,6 +23,13 @@ $grey: #F5F6F7;
   width: 900px;
 }
 
+h1 {
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 h3 {
   font-size: 20px;
   font-weight: bold;
@@ -43,7 +50,6 @@ h3 {
       width: auto;
   }
   .row {
-    align-items: flex-start;
     display: flex;
     justify-content: space-between;
     height: auto;
@@ -63,11 +69,6 @@ h3 {
     margin: 0 auto;
     padding: 10px 0;
     text-align: center;
-    h1 {
-      font-size: 45px;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
     p {
       font-size: 15px;
     }
@@ -147,6 +148,145 @@ h3 {
 // PICTURES //
 
 .pictures {
-  height: 500px;
+  height: 400px;
   background-color: $grey;
+  .arrows {
+    position: relative;
+    top: 40px;
+    right: -1080px;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  [class*="col"] {
+    display: block;
+    padding: 20px;
+    text-align: center;
+  }
+  .photo {
+    height: auto;
+    margin: 5px;
+    width: 100%;
+  }
+}
+
+
+// INPUT //
+
+.input {
+  height: 900px;
+  background-image: url("../Project/pic8.gif");
+  background-position: center;
+  background-size: cover;
+  .container {
+    position: relative;
+    top: 50%;
+    text-align: center;
+   }
+  .form-control {
+    border-radius: 4px 0 0 4px;
+    display: inline-block;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+  }
+  .check {
+    border-radius: 0 4px 4px 0;
+    background-color: $green1;
+    color: white;
+    display: inline-block;
+    height: 60px;
+    position: relative;
+    right:  6px;
+    width: 60px;
+    .fa-check {
+      position: relative;
+      top: 8px;
+    }
+  }
+}
+
+
+// DOWNLOAD //
+
+.download {
+  height: 400px;
+  background-color: $grey;
+  .container {
+    position: relative;
+    text-align: center;
+    top: 20%;
+  }
+  h4 {
+    color: white;
+    font-weight: bolder;
+    padding-top: 10px;
+  }
+  p {
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 850px;
+  }
+  .apple, .play {
+    color: white;
+    display: inline-block;
+    .app-andr {
+      background-color: $green2;
+      border-radius: 4px 0 0 4px;
+      display: inline-block;
+      height: 60px;
+      position: relative;
+      width: 300px;
+      text-transform: uppercase;
+    }
+    .app-icon, .play-icon {
+      border-radius: 0 4px 4px 0;
+      background-color: $green1;
+      display: inline-block;
+      position: relative;
+      height: 60px;
+      right: 6px;
+      top: 1.5px;
+      width: 60px;
+      .fa-android, .fa-apple {
+        position: relative;
+        top: 7px;
+      }
+    }
+  }
+
+}
+
+// FOOTER //
+
+.footer {
+//  height: 80px;
+  .container {
+    position: relative;
+    top: 60px;
+  }
+  h4 {
+    display: inline;
+    font-weight: bolder;
+    margin: 10px;
+    text-transform: uppercase;
+  }
+  .with-border {
+    border-left: solid 2px $green1;
+    border-right: solid 2px $green1;
+    padding: 0 20px;
+  }
+  p {
+    font-weight: bolder;
+    padding: 10px;
+  }
+  img {
+    position: relative;
+    right: -1060px;
+    top:  -60px;
+  }
 }
