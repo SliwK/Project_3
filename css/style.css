@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+  letter-spacing: 2px; }
+
+.button {
+  background-color: #16A085;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  height: 50px;
+  text-transform: uppercase;
+  width: 180px; }
+
+.containter {
+  margin: 0 auto;
+  width: 900px; }
+
+h3, .header .row [class*="col"] {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.header {
+  background-image: url("../Project/pic1.gif");
+  background-position: center;
+  background-size: cover;
+  color: white; }
+  .header .container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 900px;
+    width: auto; }
+  .header .row {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    width: 100%; }
+    .header .row [class*="col"] {
+      display: block;
+      padding: 10px; }
+  .header .middle-bar {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center; }
+    .header .middle-bar h1 {
+      font-size: 45px;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .header .middle-bar p {
+      font-size: 15px; }
+  .header .social-icons {
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    padding: 10px 0;
+    position: relative;
+    top: 170px;
+    text-align: center;
+    width: 100%; }
+    .header .social-icons i {
+      line-height: 30px; }
+
+.hand {
+  background-image: url("../Project/pic3_hand.gif");
+  background-position: center;
+  background-size: cover;
+  height: 650px;
+  vertical-align: middle; }
+  .hand .row {
+    padding: 20px; }
+  .hand h3, .hand .header .row [class*="col"], .header .row .hand [class*="col"] {
+    color: #16A085;
+    padding: 20px 0; }
+  .hand p {
+    color: gray;
+    line-height: 200%;
+    padding: 20px 0; }
+
+.phone {
+  background-color: white;
+  height: 500px;
+  overflow-y: hidden; }
+  .phone .row {
+    margin: 40px 0; }
+  .phone h3, .phone .header .row [class*="col"], .header .row .phone [class*="col"] {
+    color: #16A085;
+    padding: 20px 0; }
+  .phone p {
+    color: gray;
+    line-height: 200%;
+    padding: 20px 0; }
+  .phone h4 {
+    font-size: 12px;
+    font-weight: bolder;
+    padding-top: 30px; }
+  .phone img {
+    position: relative;
+    left: 50px;
+    top: 70px; }
+
+.pictures {
+  height: 500px;
+  background-color: #F5F6F7; }
+
+/*# sourceMappingURL=style.css.map */

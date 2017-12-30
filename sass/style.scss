@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+  letter-spacing: 2px;
+}
+
+$green1: #16A085;
+$green2: #1ABC9C;
+$grey: #F5F6F7;
+
+.button {
+    background-color: $green1;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    height: 50px;
+    text-transform: uppercase;
+    width: 180px;
+}
+
+.containter {
+  margin: 0 auto;
+  width: 900px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+// HEADER //
+
+.header {
+  background-image: url("../Project/pic1.gif");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      height: 900px;
+      width: auto;
+  }
+  .row {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    [class*="col"] {
+      @extend h3;
+      display: block;
+      padding: 10px;
+    }
+  }
+  .middle-bar {
+//    align-items: center;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    h1 {
+      font-size: 45px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  .social-icons {
+//    align-items: flex-end;
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    padding: 10px 0;
+    position: relative;
+    top: 170px;
+    text-align: center;
+    width: 100%;
+    i {
+      line-height: 30px;
+    }
+  }
+}
+
+
+//HAND //
+
+.hand {
+  background-image: url("../Project/pic3_hand.gif");
+  background-position: center;
+  background-size: cover;
+  height: 650px;
+  vertical-align: middle;
+  .row {
+    padding: 20px;
+  }
+  h3 {
+    color: $green1;
+    padding: 20px 0;
+  }
+  p {
+    color: gray;
+    line-height: 200%;
+    padding: 20px 0;
+  }
+}
+
+
+// PHONE //
+
+.phone {
+  background-color: white;
+  height: 500px;
+  .row {
+    margin: 40px 0;
+  }
+  h3 {
+    color: $green1;
+    padding: 20px 0;
+  }
+  p {
+    color: gray;
+    line-height: 200%;
+    padding: 20px 0;
+  }
+  overflow-y: hidden;
+  h4 {
+    font-size: 12px;
+    font-weight: bolder;
+    padding-top: 30px;
+  }
+  img {
+    position: relative;
+    left: 50px;
+    top: 70px;
+  }
+}
+
+
+
+// PICTURES //
+
+.pictures {
+  height: 500px;
+  background-color: $grey;
+}
