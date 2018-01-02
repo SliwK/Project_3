@@ -55,14 +55,15 @@ h3 {
   .row {
     display: flex;
     justify-content: space-between;
-    height: auto;
     margin: 0;
     padding: 20px;
     text-align: center;
     width: 100%;
+    @media (max-width: 768px){
+      display: block;
+    }
     [class*="col"] {
       @extend h3;
-      display: block;
       padding: 10px;
       &:hover {
         color: $green1;
@@ -87,6 +88,9 @@ h3 {
     top: 170px;
     text-align: center;
     width: 100%;
+    @media (max-width: 768px){
+      top: 90px;
+    }
     svg {
       line-height: 30px;
       &:hover {
@@ -153,6 +157,14 @@ h3 {
       color: $green1;
     }
   }
+  @media (max-width: 992px){
+    text-align: center;
+  }
+  .phonik {
+    @media (max-width: 992px){
+      display: none;
+    }
+  }
 }
 
 
@@ -161,7 +173,6 @@ h3 {
 
 .pictures {
   background-color: $grey;
-  height: 400px;
   .arrows {
     position: relative;
     top: 40px;
@@ -171,11 +182,21 @@ h3 {
         color: $green1;
       }
     }
+    @media (max-width: 1200px){
+      right: -900px;
+    }
+    @media (max-width: 992px){
+      display: none;
+    }
   }
   .row {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+    @media (max-width: 992px){
+      display: block;
+      text-align: center;
+    }
   }
   [class*="col"] {
     display: inline-block;
@@ -301,5 +322,10 @@ h3 {
   p {
     font-weight: bolder;
     padding: 10px;
+  }
+  [class*="col"] {
+    @media (max-width: 992px){
+      text-align: center;
+    }
   }
 }

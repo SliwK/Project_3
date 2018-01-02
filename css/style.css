@@ -40,13 +40,14 @@ h3, .header .row [class*="col"] {
   .header .row {
     display: flex;
     justify-content: space-between;
-    height: auto;
     margin: 0;
     padding: 20px;
     text-align: center;
     width: 100%; }
+    @media (max-width: 768px) {
+      .header .row {
+        display: block; } }
     .header .row [class*="col"] {
-      display: block;
       padding: 10px; }
       .header .row [class*="col"]:hover {
         color: #16A085; }
@@ -66,6 +67,9 @@ h3, .header .row [class*="col"] {
     top: 170px;
     text-align: center;
     width: 100%; }
+    @media (max-width: 768px) {
+      .header .social-icons {
+        top: 90px; } }
     .header .social-icons svg {
       line-height: 30px; }
       .header .social-icons svg:hover {
@@ -110,20 +114,35 @@ h3, .header .row [class*="col"] {
     top: 70px; }
   .phone svg:hover {
     color: #16A085; }
+  @media (max-width: 992px) {
+    .phone {
+      text-align: center; } }
+  @media (max-width: 992px) {
+    .phone .phonik {
+      display: none; } }
 
 .pictures {
-  background-color: #F5F6F7;
-  height: 400px; }
+  background-color: #F5F6F7; }
   .pictures .arrows {
     position: relative;
     top: 40px;
     right: -1080px; }
     .pictures .arrows svg:hover {
       color: #16A085; }
+    @media (max-width: 1200px) {
+      .pictures .arrows {
+        right: -900px; } }
+    @media (max-width: 992px) {
+      .pictures .arrows {
+        display: none; } }
   .pictures .row {
     display: flex;
     justify-content: space-between;
     padding: 20px 0; }
+    @media (max-width: 992px) {
+      .pictures .row {
+        display: block;
+        text-align: center; } }
   .pictures [class*="col"] {
     display: inline-block;
     padding: 20px;
@@ -218,5 +237,8 @@ h3, .header .row [class*="col"] {
 .footer p {
   font-weight: bolder;
   padding: 10px; }
+@media (max-width: 992px) {
+  .footer [class*="col"] {
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
