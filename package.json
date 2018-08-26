@@ -27,7 +27,8 @@
     "lodash": "^4.17.10",
     "nu-html-checker": "^0.1.0",
     "onchange": "^4.1.0",
-    "parallelshell": "^3.0.2"
+    "parallelshell": "^3.0.2",
+    "superagent": "^3.8.3"
   },
   "repository": {
     "type": "git",
