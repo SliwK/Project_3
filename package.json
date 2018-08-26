@@ -24,6 +24,7 @@
     "glob-run": "^0.1.6",
     "hoek": "^5.0.4",
     "jshint": "^2.9.6",
+    "lodash": "^4.17.10",
     "nu-html-checker": "^0.1.0",
     "onchange": "^4.1.0",
     "parallelshell": "^3.0.2"
